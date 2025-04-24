@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  }
+
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  
+  body {
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #000;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-weight: bold;
+  }
+  
+  nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  main h1 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .subtext {
+    text-align: center;
+    font-size: 0.9em;
+    color: gray;
+    margin-bottom: 20px;
+  }
+  
+  .grid-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .column {
+    flex: 1;
+    border: 1px solid #000;
+    padding: 10px;
+  }
+  
+  .column h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .column ul {
+    list-style: none;
+  }
+  
+  .column li {
+    margin: 5px 0;
+  }
+  
+  .job {
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 10px;
+    background: #f7f7f7;
+  }
+  
+  .education ul {
+    margin-top: 10px;
+    padding-left: 15px;
+  }
+  
+  .reviews {
+    margin-bottom: 20px;
+  }
+  
+  .review-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .card {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+  }
+  
+  .author {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: gray;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    nav {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: center;
+    }
+  
+    .grid-section {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .column {
+      width: 100%;
+    }
+  
+    .toggle-header {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  
+    .toggle-content {
+      display: none;
+      border: 1px solid #ccc;
+      border-top: none;
+      padding: 10px;
+      background-color: #fafafa;
+    }
+  
+    .toggle-section.active .toggle-content {
+      display: block;
+    }
+  
+    .education {
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #fafafa;
+    }
+  
+    .reviews {
+      margin-top: 20px;
+    }
+  
+    .review-cards {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+    }
+  
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
